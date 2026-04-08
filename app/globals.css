@@ -121,10 +121,9 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
-    @apply bg-background text-foreground;
-  }
-  html {
-    @apply font-sans;
+    @apply bg-primary text-white leading-loose;
+    font-family: var(--font-jetbrains-mono);
   }
 }
