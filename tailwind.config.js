@@ -33,18 +33,14 @@ module.exports = {
         },
       },
 
+      fontFamily: {
+        primary: ["var(--font-jetbrains-mono)"],
+      },
+
       borderRadius: {
         lg: "0.75rem",
         md: "0.5rem",
         sm: "0.375rem",
-      },
-
-      theme: {
-        extend: {
-          fontFamily: {
-            primary: ["var(--font-jetbrains-mono)"],
-          },
-        },
       },
 
       keyframes: {
