@@ -22,7 +22,7 @@ const Header = () => {
           <Nav />
 
           <Link href="/contato">
-            <Button className="bg-accent">
+            <Button>
               Contrate-me
             </Button>
           </Link>
