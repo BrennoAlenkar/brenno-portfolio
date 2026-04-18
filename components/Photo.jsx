@@ -44,6 +44,7 @@ const Photo = () => {
           style={{ originX: "50%", originY: "50%" }}
         >
           <motion.circle
+            key="circle-animation"
             cx="253"
             cy="253"
             r="250"

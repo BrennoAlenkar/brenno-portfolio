@@ -2,6 +2,7 @@ import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 // componentes
+import CursorSpotlight from "@/components/CursorSpotlight";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
       className={`${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="font-primary min-h-screen">
+        <CursorSpotlight />
         <Header />
         <StairTransition />
         <PageTransition>

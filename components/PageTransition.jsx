@@ -7,8 +7,7 @@ const PageTransition = ({ children }) => {
   const pathname = usePathname();
 
   return (
-    <AnimatePresence mode="wait" initial={false}>
-      {/* overlay de transição */}
+    <AnimatePresence mode="wait">
       <motion.div
         key={pathname}
         initial={{ opacity: 1 }}
@@ -24,6 +23,7 @@ const PageTransition = ({ children }) => {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.4, ease: "easeInOut" }}
+        className="overflow-hidden"
       >
         {children}
       </motion.div>
