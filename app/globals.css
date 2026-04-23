@@ -122,7 +122,7 @@
   * {
     @apply border-border outline-ring/50;
     .container {
-      @apply mx-auto px-24 max-w-[1280px];
+      @apply mx-auto px36 max-w-[1280px];
     }
   }
 
@@ -131,7 +131,7 @@
     font-family: var(--font-jetbrains-mono);
   }
   .h1 {
-    @apply text-[48px] xl:text-[65px] leading-[1.1] font-semibold;
+    @apply text-[48px] xl:text-[60px] leading-[1.1] font-semibold;
   }
 
   .h2 {

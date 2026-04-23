@@ -10,14 +10,14 @@ const Photo = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 0.4, ease: "easeIn" }}
-        className="relative w-[300px] h-[300px] xl:w-[506px] xl:h-[506px]"
+        className="relative w-[220px] h-[220px] xl:w-[360px] xl:h-[360px]"
       >
         {/* imagem */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2.4, duration: 0.4, ease: "easeInOut" }}
-          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute inset-0 m-auto"
+          className="w-[218px] h-[218px] xl:w-[358px] xl:h-[358px] mix-blend-lighten absolute inset-0 m-auto"
         >
           <Image
             src="/assets/img-teste.png"
@@ -31,7 +31,7 @@ const Photo = () => {
 
         {/* circle */}
         <motion.svg
-          className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]"
+          className="w-[220px] xl:w-[360px] h-[220px] xl:h-[360px]"
           fill="transparent"
           viewBox="0 0 506 506"
           xmlns="http://www.w3.org/2000/svg"
