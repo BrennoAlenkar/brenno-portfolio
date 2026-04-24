@@ -9,7 +9,7 @@ import Stats from "@/components/Stats";
 const Home = () => {
   return (
     <section className="h-full">
-      <div className="container mx-auto h-full">
+      <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 xl:px-16 h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* texto */}
           <div className="text-center xl:text-left order-2 xl:order-none">
