@@ -121,9 +121,9 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
-    .container {
+    /* .container {
       @apply mx-auto px-36 max-w-[1280px];
-    }
+    } */
   }
 
   body {
@@ -141,4 +141,12 @@
   .h3 {
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
   }
+
+  .text-outline {
+  -webkit-text-stroke: 1px #fff;
+}
+
+.text-outline-hover {
+  -webkit-text-stroke: 1px #00ff99;
+}
 }
