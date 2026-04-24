@@ -18,8 +18,7 @@ const Home = () => {
               Olá, eu sou<br /><span className="text-accent">Brenno Alencar</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi officia accusantiu
-              numquam sapiente id officia voluptate laborum.
+              Desenvolvedor de Software Front-end com mais de 3 anos de experiência em aplicações web modernas e escaláveis.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">

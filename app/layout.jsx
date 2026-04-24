@@ -6,6 +6,7 @@ import CursorSpotlight from "@/components/CursorSpotlight";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
+import AnimatedBackground from "@/components/AnimatedBackground";
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
@@ -25,7 +26,8 @@ export default function RootLayout({ children }) {
       className={`${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="font-primary min-h-screen">
-        <CursorSpotlight />
+        <AnimatedBackground />
+        {/* <CursorSpotlight /> */}
         <Header />
         <StairTransition />
         <PageTransition>
