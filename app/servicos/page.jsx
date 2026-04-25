@@ -11,6 +11,7 @@ const services = [
     description:
       "Criação de sites modernos, responsivos e otimizados para oferecer a melhor experiência ao usuário.",
     href: "#",
+    techs: ["React", "Next.js", "Tailwind CSS", "Node.js"],
   },
   {
     num: "02",
@@ -18,6 +19,7 @@ const services = [
     description:
       "Interfaces intuitivas e atraentes, focadas na usabilidade e na experiência do usuário.",
     href: "#",
+    techs: ["Figma", "Adobe XD", "Framer"],
   },
   {
     num: "03",
@@ -25,6 +27,7 @@ const services = [
     description:
       "Criação de identidades visuais marcantes e profissionais para fortalecer sua marca.",
     href: "#",
+    techs: ["Illustrator", "Photoshop", "Figma"],
   },
   {
     num: "04",
@@ -32,6 +35,7 @@ const services = [
     description:
       "Otimização para mecanismos de busca, aumentando sua visibilidade e atraindo mais clientes.",
     href: "#",
+    techs: ["Google Analytics", "Search Console", "Semrush"],
   },
 ];
 
@@ -77,6 +81,17 @@ const Servicos = () => {
               <p className="text-sm xl:text-base text-white/60 leading-relaxed">
                 {service.description}
               </p>
+
+               <div className="flex flex-wrap gap-2">
+                {service.techs.map((tech, i) => (
+                  <span
+                    key={i}
+                    className="text-xs px-3 py-1 rounded-full border border-accent/40 text-accent/80 group-hover:border-accent group-hover:text-accent transition-all duration-300"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
 
               {/* Border */}
               <div className="border-b border-white/20 w-full pt-2"></div>

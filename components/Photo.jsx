@@ -9,7 +9,7 @@ const Photo = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 2, duration: 0.4, ease: "easeIn" }}
+        transition={{ delay: 0.8, duration: 0.4, ease: "easeIn" }}
         className="relative w-[220px] h-[220px] xl:w-[360px] xl:h-[360px]"
       >
         {/* imagem */}
