@@ -13,7 +13,7 @@ const Stats = () => {
   return (
     <section>
       <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 xl:px-16">
-        <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none">
+        <div className="flex flex-wrap gap-30 max-w-[80vw] mx-auto xl:max-w-none">
           {stats.map((item, index) => (
             <div
               className="flex flex-1 gap-4 items-center justify-center xl:justify-center"

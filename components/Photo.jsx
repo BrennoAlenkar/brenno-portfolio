@@ -17,7 +17,7 @@ const Photo = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2.4, duration: 0.4, ease: "easeInOut" }}
-          className="w-[218px] h-[218px] xl:w-[358px] xl:h-[358px] mix-blend-lighten absolute inset-0 m-auto"
+          className="w-[218px] h-[218px] xl:w-[358px] xl:h-[358px] mix-blend-lighten absolute inset-0 m-auto overflow-hidden rounded-full"
         >
           <Image
             src="/assets/img-teste.png"
@@ -25,7 +25,7 @@ const Photo = () => {
             quality={100}
             fill
             alt="photo"
-            className="object-contain"
+            className="object-cover"
           />
         </motion.div>
 

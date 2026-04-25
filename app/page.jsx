@@ -1,5 +1,8 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+import Typewriter from "typewriter-effect";
 
 //componetes
 import Photo from "@/components/Photo";
@@ -13,7 +16,22 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* texto */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Software Developer</span>
+            <span className="text-xl">
+              <Typewriter
+                options={{
+                 strings: [
+                  "Software Developer",
+                  "Front-end Engineer",
+                  "React Specialist",
+                  "UI/UX Designer",
+                ],
+                  autoStart: true,
+                  loop: true,
+                  delay: 75,
+                  deleteSpeed: 40,
+                }}
+              />
+            </span>
             <h1 className="h1 mb-6">
               Olá, eu sou<br /><span className="text-accent">Brenno Alencar</span>
             </h1>
