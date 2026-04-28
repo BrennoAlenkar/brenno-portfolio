@@ -44,11 +44,17 @@ const Home = () => {
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2 border border-accent text-accent
-               hover:bg-accent hover:text-black rounded-full px-6 py-3 transition-all
-                duration-300"
+                hover:bg-accent hover:text-black rounded-full px-6 py-3 transition-all duration-300
+                text-sm font-medium"
               >
-                <span>Download CV</span>
+                <a 
+                href="/curriculo.pdf" 
+                download="Brenno_Alencar_CV.pdf"
+                className="flex items-center gap-2"
+                >
+                  <span>Download CV</span>  
                 <FiDownload className="text-xl" />
+                </a>
               </Button>
              <div className="mb-8 xl:mb-0">
               <Social
