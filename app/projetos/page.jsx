@@ -15,7 +15,7 @@ const projects = [
       "Portfolio moderno desenvolvido com Next.js e Tailwind CSS, com animações fluidas, tema escuro e design responsivo.",
     stack: ["Next.js", "Tailwind CSS", "Framer Motion"],
     live: "https://seu-portfolio.com",
-    github: "https://github.com/brennoalencar/portfolio",
+    github: "https://github.com/BrennoAlenkar",
     image: "/assets/work/thumb1.png",
   },
   {
@@ -26,7 +26,7 @@ const projects = [
       "Aplicação web full stack para gerenciamento de dados com autenticação, dashboard e relatórios em tempo real.",
     stack: ["React", "Node.js", "PostgreSQL"],
     live: "https://projeto2.com",
-    github: "https://github.com/brennoalencar/gestao",
+    github: "https://github.com/BrennoAlenkar",
     image: "/assets/work/thumb2.png",
   },
   {
@@ -37,7 +37,18 @@ const projects = [
       "Landing page de alta conversão para produto SaaS, com foco em performance, SEO e experiência do usuário.",
     stack: ["Next.js", "Tailwind CSS"],
     live: "https://projeto3.com",
-    github: "https://github.com/brennoalencar/landing",
+    github: "https://github.com/BrennoAlenkar",
+    image: "/assets/work/thumb3.png",
+  },
+    {
+    num: "04",
+    category: "Outro projeto",
+    title: "Landing Page",
+    description:
+      "Landing page de alta conversão para produto SaaS, com foco em performance, SEO e experiência do usuário.",
+    stack: ["Next.js", "Tailwind CSS"],
+    live: "https://projeto3.com",
+    github: "https://github.com/BrennoAlenkar",
     image: "/assets/work/thumb3.png",
   },
 ];
