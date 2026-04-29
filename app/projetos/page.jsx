@@ -77,8 +77,8 @@ const Projetos = () => {
                 className="flex flex-col gap-5"
               >
                 {/* número */}
-                <span className="text-[80px] leading-none font-extrabold text-transparent"
-                  style={{ WebkitTextStroke: "1px rgba(255,255,255,0.15)" }}
+                <span className="text-[80px] leading-none font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500"
+                  // style={{ WebkitTextStroke: "1px rgba(255,255,255,0.15)" }}
                 >
                   {project.num}
                 </span>

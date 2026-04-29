@@ -3,6 +3,11 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
+import emailjs from "@emailjs/browser";
+
+const SERVICE_ID = "service_5uju1vv";
+const TEMPLATE_ID = "9srywh7";
+const PUBLIC_KEY = "7qsOyi8R49pPPIJri";
 
 const info = [
   {
@@ -30,23 +35,48 @@ const services = [
   "Consultoria Frontend",
 ];
 
+const EMPTY_FORM = {
+  nome: "",
+  sobrenome: "",
+  email: "",
+  telefone: "",
+  servico: "",
+  mensagem: "",
+};
+
 const Contato = () => {
-  const [form, setForm] = useState({
-    nome: "",
-    sobrenome: "",
-    email: "",
-    telefone: "",
-    servico: "",
-    mensagem: "",
-  });
+  const [form, setForm] = useState(EMPTY_FORM);
+  const [status, setStatus] = useState("idle"); // idle | loading | success | error
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {   
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(form);
+    setStatus("loading");
+
+    try {
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          nome: form.nome,
+          sobrenome: form.sobrenome,
+          email: form.email,
+          telefone: form.telefone,
+          servico: form.servico,
+          mensagem: form.mensagem,
+        },
+        PUBLIC_KEY
+      );
+
+      setStatus("success");
+      setForm(EMPTY_FORM);
+    } catch (err) {
+      console.error("Erro ao enviar:", err);
+      setStatus("error");
+    }
   };
 
   return (
@@ -135,11 +165,24 @@ const Contato = () => {
               className="bg-[#232329] text-white text-sm placeholder:text-white/30 rounded-lg px-4 py-2.5 border border-white/5 focus:border-accent/50 focus:outline-none resize-none transition-colors duration-300"
             />
 
+            {/* feedback de status */}
+            {status === "success" && (
+              <p className="text-green-400 text-sm">
+                ✓ Mensagem enviada com sucesso!
+              </p>
+            )}
+            {status === "error" && (
+              <p className="text-red-400 text-sm">
+                ✗ Erro ao enviar. Tente novamente.
+              </p>
+            )}
+
             <button
               onClick={handleSubmit}
-              className="w-fit bg-accent text-primary font-semibold text-sm px-8 py-2.5 rounded-full hover:bg-accent/90 active:scale-95 transition-all duration-300 cursor-pointer"
+              disabled={status === "loading"}
+              className="w-fit bg-accent text-primary font-semibold text-sm px-8 py-2.5 rounded-full hover:bg-accent/90 active:scale-95 transition-all duration-300 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
             >
-              Enviar mensagem
+              {status === "loading" ? "Enviando..." : "Enviar mensagem"}
             </button>
           </motion.div>
 

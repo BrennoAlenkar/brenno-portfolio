@@ -64,6 +64,7 @@ const Photo = () => {
               duration: 20,
               repeat: Infinity,
               ease: "easeInOut",
+              repeatType: "mirror",
             }}
           />
         </motion.svg>

@@ -47,7 +47,7 @@ const experience = {
 const education = {
   title: "Minha educação",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+    "Minha trajetória é marcada pelo foco em tecnologia e aprendizado constante, sempre buscando evoluir na prática e desenvolver soluções cada vez melhores.",
   items: [
     {
       period: "Cursando",
