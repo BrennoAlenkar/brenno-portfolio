@@ -66,7 +66,7 @@ const education = {
 const skills = {
   title: "Minhas skills",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+    "Algumas das tecnologias com as quais trabalho e possuo domínio, utilizadas no desenvolvimento de aplicações modernas, responsivas e eficientes.",
   items: [
     { icon: <FaHtml5 />, name: "HTML 5" },
     { icon: <FaCss3Alt />, name: "CSS 3" },
@@ -163,21 +163,21 @@ const Sobre = () => {
           <p className="text-white/60 max-w-[520px] leading-relaxed text-sm xl:text-base">
             {skills.description}
           </p>
-          <div className="grid grid-cols-5 gap-2 w-fit">
-            {skills.items.map((skill, i) => (
-              <div
-                key={i}
-                className="group bg-[#232329] rounded-xl w-[120px] h-[120px] flex flex-col justify-center items-center gap-2 border border-white/5 hover:border-accent/40 transition-all duration-300 cursor-default"
-              >
-                <div className="text-5xl text-white/80 group-hover:text-accent transition-colors duration-300">
-                  {skill.icon}
-                </div>
-                <span className="text-xs text-white/40 group-hover:text-white/70 transition-colors duration-300">
-                  {skill.name}
-                </span>
+          <div className="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-5 gap-2 w-full max-w-[800px]">
+          {skills.items.map((skill, i) => (
+            <div
+              key={i}
+              className="group bg-[#232329] rounded-xl w-full h-[90px] sm:h-[100px] xl:h-[120px] flex flex-col justify-center items-center gap-1.5 border border-white/5 hover:border-accent/40 transition-all duration-300 cursor-default"
+            >
+              <div className="text-3xl sm:text-4xl xl:t ext-5xl text-white/80 group-hover:text-accent transition-colors duration-300">
+                {skill.icon}
               </div>
-            ))}
-          </div>
+              <span className="text-[10px] sm:text-xs text-white/40 group-hover:text-white/70 transition-colors duration-300 text-center leading-tight px-2">
+                {skill.name}
+              </span>
+            </div>
+          ))}
+        </div>
         </motion.div>
       );
     }
