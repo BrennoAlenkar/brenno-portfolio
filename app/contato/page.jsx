@@ -6,7 +6,7 @@ import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 import emailjs from "@emailjs/browser";
 
 const SERVICE_ID = "service_5uju1vv";
-const TEMPLATE_ID = "9srywh7";
+const TEMPLATE_ID = "template_40mxfkx";
 const PUBLIC_KEY = "7qsOyi8R49pPPIJri";
 
 const info = [
