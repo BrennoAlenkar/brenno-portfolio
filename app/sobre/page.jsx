@@ -52,13 +52,9 @@ const education = {
     {
       period: "Cursando",
       role: "Análise e Desenvolvimento de Sistemas",
-      company: "Universidade Federal de Goiás",
+      company: "UNIGOIÁS – Centro Universitário de Goiás",
     },
-    {
-      period: "2018 - 2020",
-      role: "Técnico em Informática",
-      company: "Instituto Federal de Goiás",
-    },
+   
     { period: "2023", role: "UX/UI Design", company: "Alura" },
   ],
 };
@@ -167,7 +163,7 @@ const Sobre = () => {
           {skills.items.map((skill, i) => (
             <div
               key={i}
-              className="group bg-[#232329] rounded-xl w-full h-[90px] sm:h-[100px] xl:h-[120px] flex flex-col justify-center items-center gap-1.5 border border-white/5 hover:border-accent/40 transition-all duration-300 cursor-default"
+              className="group bg-[#232329] rounded-xl w-full h-[120px] flex flex-col justify-center items-center gap-1.5 border border-white/5 hover:border-accent/40 transition-all duration-300 cursor-default"
             >
               <div className="text-3xl sm:text-4xl xl:t ext-5xl text-white/80 group-hover:text-accent transition-colors duration-300">
                 {skill.icon}

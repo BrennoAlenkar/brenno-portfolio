@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       lang="pt-BR"
       className={`${jetbrainsMono.variable} h-full antialiased`}
     >
-      <body className="font-primary min-h-screen">
+      <body className="font-primary min-h-screen" suppressHydrationWarning>
         <AnimatedBackground />
         {/* <CursorSpotlight /> */}
         <Header />
