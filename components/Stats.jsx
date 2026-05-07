@@ -6,7 +6,7 @@ const stats = [
   { num: 3, text: "Anos de experiência" },
   { num: 15, text: "Projetos completos" },
   { num: 12,  text: "Clientes satisfeitos" },
-  { num: 166,  text: "Code commits" },
+  { num: 180,  text: "Code commits" },
 ];
 
 const Stats = () => {
@@ -22,7 +22,7 @@ const Stats = () => {
               <CountUp
                 end={item.num}
                 duration={5}
-                delay={2}
+                delay={0.9}
                 className="text-4xl xl:text-5xl font-extrabold"
               />
               <p

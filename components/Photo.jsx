@@ -16,7 +16,7 @@ const Photo = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 2.4, duration: 0.4, ease: "easeInOut" }}
+          transition={{ delay: 1, duration: 0.4, ease: "easeInOut" }}
           className="w-[218px] h-[218px] xl:w-[358px] xl:h-[358px] mix-blend-lighten absolute inset-0 m-auto overflow-hidden rounded-full"
         >
           <Image
