@@ -10,7 +10,7 @@ Meu portfólio pessoal, desenvolvido com foco em performance, responsividade e e
 ---
 
  - Next.js
- - JavsScript
+ - JavaScript
  - Tailwind CSS
  - shadcn/ui
  - Framer Motion
