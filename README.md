@@ -9,20 +9,20 @@ Meu portfólio pessoal, desenvolvido com foco em performance, responsividade e e
 🛠️ Tecnologias utilizadas
 ---
 
-Next.js
-TypeScript
-Tailwind CSS
-shadcn/ui
-Framer Motion
+ - Next.js
+ - TypeScript
+ - Tailwind CSS
+ - shadcn/ui
+ - Framer Motion
 
 ✨ Funcionalidades
-Interface moderna e responsiva
-Animações suaves
-Sessão de projetos
-Sessão sobre mim
-Contato rápido
-Design adaptado para mobile e desktop
-Componentização reutilizável
+ - Interface moderna e responsiva
+ - Animações suaves
+ - Sessão de projetos
+ - Sessão sobre mim
+ - Contato rápido
+ - Design adaptado para mobile e desktop
+ - Componentização reutilizável
 
 
 Rodando localmente
