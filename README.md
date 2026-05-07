@@ -1,9 +1,8 @@
 🖥️ Portfólio Pessoal — Brenno Alencar
 Meu portfólio pessoal, desenvolvido com foco em performance, responsividade e experiência do usuário. Aqui você encontra meus projetos, minhas habilidades e um pouco sobre quem eu sou como desenvolvedor front-end.
-🔗 brenno-portfolio.vercel.app
 
+🔗 https://brenno-portfolio.vercel.app
 
-🔗 brenno-portfolio.vercel.app
 ---
 🛠️ Tecnologias utilizadas
 Next.js
