@@ -16,7 +16,7 @@ const projects = [
     stack: ["Next.js", "Tailwind CSS", "Framer Motion"],
     live: "https://seu-portfolio.com",
     github: "https://github.com/BrennoAlenkar",
-    image: "/assets/work/thumb1.png",
+    image: "/assets/projeto-desenvolvimento.png",
   },
   {
     num: "02",
@@ -27,7 +27,7 @@ const projects = [
     stack: ["React", "Node.js", "PostgreSQL"],
     live: "https://projeto2.com",
     github: "https://github.com/BrennoAlenkar",
-    image: "/assets/work/thumb2.png",
+    image: "/assets/projeto-desenvolvimento.png",
   },
   {
     num: "03",
@@ -38,7 +38,7 @@ const projects = [
     stack: ["Next.js", "Tailwind CSS"],
     live: "https://projeto3.com",
     github: "https://github.com/BrennoAlenkar",
-    image: "/assets/work/thumb3.png",
+    image: "/assets/projeto-desenvolvimento.png",
   },
 ];
 
