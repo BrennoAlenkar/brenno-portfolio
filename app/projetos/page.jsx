@@ -9,7 +9,7 @@ import { FiArrowUpRight, FiGithub, FiChevronLeft, FiChevronRight } from "react-i
 const projects = [
   {
     num: "01",
-    category: "Frontend Project",
+    category: "Em Desenvolvimento",
     title: "Portfolio Pessoal",
     description:
       "Portfolio moderno desenvolvido com Next.js e Tailwind CSS, com animações fluidas, tema escuro e design responsivo.",
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     num: "02",
-    category: "Full Stack Project",
+    category: "Em Desenvolvimento",
     title: "Sistema de Gestão",
     description:
       "Aplicação web full stack para gerenciamento de dados com autenticação, dashboard e relatórios em tempo real.",
@@ -31,18 +31,7 @@ const projects = [
   },
   {
     num: "03",
-    category: "Frontend Project",
-    title: "Landing Page",
-    description:
-      "Landing page de alta conversão para produto SaaS, com foco em performance, SEO e experiência do usuário.",
-    stack: ["Next.js", "Tailwind CSS"],
-    live: "https://projeto3.com",
-    github: "https://github.com/BrennoAlenkar",
-    image: "/assets/work/thumb3.png",
-  },
-    {
-    num: "04",
-    category: "Outro projeto",
+    category: "Em Desenvolvimento",
     title: "Landing Page",
     description:
       "Landing page de alta conversão para produto SaaS, com foco em performance, SEO e experiência do usuário.",
