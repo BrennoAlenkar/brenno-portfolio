@@ -9,14 +9,14 @@ import { FiArrowUpRight, FiGithub, FiChevronLeft, FiChevronRight } from "react-i
 const projects = [
   {
     num: "01",
-    category: "Em Desenvolvimento",
+    category: "Portfolio Website",
     title: "Portfolio Pessoal",
     description:
       "Portfolio moderno desenvolvido com Next.js e Tailwind CSS, com animações fluidas, tema escuro e design responsivo.",
     stack: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    live: "https://seu-portfolio.com",
-    github: "https://github.com/BrennoAlenkar",
-    image: "/assets/projeto-desenvolvimento.png",
+    live: "https://brenno-portfolio.vercel.app/",
+    github: "https://github.com/BrennoAlenkar/brenno-portfolio",
+    image: "/assets/img-portfolio.png",
   },
   {
     num: "02",
