@@ -47,8 +47,8 @@ const Servicos = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{
-            delay: 1,
-            duration: 0.4,
+            delay: 0.4,
+            duration: 0.1,
             ease: "easeIn",
           }}
           className="grid grid-cols-1 md:grid-cols-2 gap-[40px]"

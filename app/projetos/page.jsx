@@ -62,7 +62,10 @@ const Projetos = () => {
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -16 }}
-                transition={{ duration: 0.3 }}
+                transition={{ 
+                  delay: 0.6,
+                  duration: 0.3,
+                }}
                 className="flex flex-col gap-5"
               >
                 {/* número */}
@@ -151,7 +154,10 @@ const Projetos = () => {
                 initial={{ opacity: 0, scale: 0.97 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.97 }}
-                transition={{ duration: 0.35 }}
+                transition={{ 
+                  delay: 0.4,
+                  duration: 0.35,
+                }}
                 className="relative w-full aspect-video rounded-2xl overflow-hidden border border-white/5 bg-[#232329] group"
               >
                 <Image

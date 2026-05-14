@@ -88,7 +88,10 @@ const Contato = () => {
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
+            transition={{ 
+              delay: 0.4,
+              duration: 0.4,
+             }}
             className="flex-1 bg-[#1c1c22] rounded-2xl p-6 xl:p-8 flex flex-col gap-4 border border-white/5"
           >
             <div className="flex flex-col gap-1">
@@ -190,7 +193,9 @@ const Contato = () => {
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.15 }}
+            transition={{ 
+              duration: 0.4, 
+              delay: 0.15 }}
             className="flex flex-col gap-3 xl:w-[300px] shrink-0 justify-center"
           >
             {info.map((item, i) => (
