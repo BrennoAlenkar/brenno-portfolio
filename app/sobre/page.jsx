@@ -54,7 +54,7 @@ const education = {
       role: "Análise e Desenvolvimento de Sistemas",
       company: "UNIGOIÁS – Centro Universitário de Goiás",
     },
-   
+
     { period: "2023", role: "UX/UI Design", company: "Alura" },
   ],
 };
@@ -115,8 +115,8 @@ const Sobre = () => {
           key={active}
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ 
-            delay: 0.4  ,
+          transition={{
+            delay: 0.4,
             duration: 0.3,
           }}
           className="flex flex-col gap-6"
@@ -155,10 +155,10 @@ const Sobre = () => {
           key="skills"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ 
+          transition={{
             delay: 0.4,
-            duration: 0.3
-           }}
+            duration: 0.3,
+          }}
           className="flex flex-col gap-6"
         >
           <h3 className="text-3xl font-bold text-white">{skills.title}</h3>
@@ -166,20 +166,20 @@ const Sobre = () => {
             {skills.description}
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-5 gap-2 w-full max-w-[800px]">
-          {skills.items.map((skill, i) => (
-            <div
-              key={i}
-              className="group bg-[#232329] rounded-xl w-full h-[120px] flex flex-col justify-center items-center gap-1.5 border border-white/5 hover:border-accent/40 transition-all duration-300 cursor-default"
-            >
-              <div className="text-3xl sm:text-4xl xl:t ext-5xl text-white/80 group-hover:text-accent transition-colors duration-300">
-                {skill.icon}
+            {skills.items.map((skill, i) => (
+              <div
+                key={i}
+                className="group bg-[#232329] rounded-xl w-full h-[120px] flex flex-col justify-center items-center gap-1.5 border border-white/5 hover:border-accent/40 transition-all duration-300 cursor-default"
+              >
+                <div className="text-3xl sm:text-4xl xl:t ext-5xl text-white/80 group-hover:text-accent transition-colors duration-300">
+                  {skill.icon}
+                </div>
+                <span className="text-[10px] sm:text-xs text-white/40 group-hover:text-white/70 transition-colors duration-300 text-center leading-tight px-2">
+                  {skill.name}
+                </span>
               </div>
-              <span className="text-[10px] sm:text-xs text-white/40 group-hover:text-white/70 transition-colors duration-300 text-center leading-tight px-2">
-                {skill.name}
-              </span>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
         </motion.div>
       );
     }
@@ -220,7 +220,12 @@ const Sobre = () => {
       <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 xl:px-16">
         <div className="flex flex-col xl:flex-row gap-12 xl:gap-16">
           {/* Tabs (lateral esquerda)*/}
-          <div className="flex xl:flex-col gap-3 xl:w-[220px] shrink-0">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.4, duration:  0.3 }}
+            className="flex xl:flex-col gap-3 xl:w-[220px] shrink-0"
+          >
             {tabs.map((tab) => (
               <button
                 key={tab.value}
@@ -234,7 +239,7 @@ const Sobre = () => {
                 {tab.label}
               </button>
             ))}
-          </div>
+          </motion.div>
 
           {/*Conteúdo (direita) */}
           <div className="flex-1 min-h-[400px]">{renderContent()}</div>

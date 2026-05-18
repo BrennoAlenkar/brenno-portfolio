@@ -195,7 +195,7 @@ const Contato = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ 
               duration: 0.4, 
-              delay: 0.15 }}
+              delay: 0.4 }}
             className="flex flex-col gap-3 xl:w-[300px] shrink-0 justify-center"
           >
             {info.map((item, i) => (
