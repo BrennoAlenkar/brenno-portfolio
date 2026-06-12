@@ -25,7 +25,7 @@ const MobileNav = () => {
         <div className="mt-32 mb-8 text-center text-2xl">
           <Link href="/">
             <h1 className="text-4xl font-semibold text-white">
-              Brenno<span className='text-accent'>&lt;/&gt;</span>
+              Brenno<span className='text-accent'>.</span>
             </h1>
           </Link>
         </div>
