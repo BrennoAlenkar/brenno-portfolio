@@ -21,7 +21,7 @@ const Home = () => {
                 options={{
                  strings: [
                   "Software Developer",
-                  "Full Stack Engineer",
+                  "Front End Engineer",
                   "React Specialist",
                   "UI/UX Designer",
                 ],
@@ -36,7 +36,7 @@ const Home = () => {
               Olá, eu sou<br /><span className="text-accent">Brenno Alencar</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              Desenvolvedor de Software Full Stack com mais de 3 anos de experiência em aplicações web modernas, responsivas e escaláveis.
+              Desenvolvedor de Software Front End com mais de 3 anos de experiência em aplicações web modernas, responsivas e escaláveis.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
